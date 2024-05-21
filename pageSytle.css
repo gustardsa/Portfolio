@@ -34,3 +34,15 @@ body{
     color:black;
     display: inline-block;
 }
+@media screen and (max-width: 1020px){
+    .topo{
+        flex-direction: column-reverse;
+        padding: 0 10%;
+    }
+    .banner{
+        margin-left: 0;
+    }
+    .btn{
+        text-align: left;
+    }
+}
