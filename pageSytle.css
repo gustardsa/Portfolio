@@ -34,7 +34,7 @@ body{
     color:black;
     display: inline-block;
 }
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1000px){
     .topo{
         flex-direction: column-reverse;
         padding: 0 10%;
