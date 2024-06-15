@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Rolagem com JavaScript</title>
+    <style>
+        /* Estilos apenas para visualização */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #conteudo-destino {
+            margin-top: 1000px; /* Apenas para criar espaço e simular a rolagem */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="scrollButton">Ir para o Conteúdo</button>
+
+    <div id="conteudo-destino">
+        <h2>Seção de Conteúdo</h2>
+        <p>Este é o conteúdo para o qual vamos rolar quando o botão for clicado.</p>
+    </div>
+
+    <script>
+        // JavaScript para rolagem suave
+        document.getElementById('scrollButton').addEventListener('click', function() {
+            document.getElementById('conteudo-destino').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
